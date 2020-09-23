@@ -24,7 +24,7 @@ fun BottomNavigationBar(
                 icon = { Icon(screen.icon) },
                 label = { Text(text = screen.title) },
                 selected = currentScreen::class == screen::class,
-                onSelect = { onDestinationSelected.invoke(screen) }
+                onClick = { onDestinationSelected.invoke(screen) }
             )
         }
     }
